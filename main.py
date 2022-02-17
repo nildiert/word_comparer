@@ -16,14 +16,14 @@ app = FastAPI()
 async def root():
     return {
         "message": "please use /docs or /words_comparer with POST method",
-        "urls": ["https://dashboard.heroku.com/apps/word-comparer", "https://dashboard.heroku.com/apps/word-comparer/docs"]
+        "urls": ["https://word-comparer.herokuapp.com/words_comparer", "https://word-comparer.herokuapp.com/docs"]
         }
 
 @app.get("/words_comparer")
 async def get_compare_words():
     return {
         "message": "please use /docs or /words_comparer with POST method",
-        "urls": ["https://dashboard.heroku.com/apps/word-comparer", "https://dashboard.heroku.com/apps/word-comparer/docs"]
+        "urls": ["https://word-comparer.herokuapp.com/words_comparer", "https://word-comparer.herokuapp.com/docs"]
         }
 
 @app.post("/words_comparer")
